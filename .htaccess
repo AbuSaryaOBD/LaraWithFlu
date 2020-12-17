@@ -1,0 +1,10 @@
+
+RewriteEngine on
+DirectoryIndex index.php
+
+# enable directory browsing
+Options All +Indexes
+RewriteCond %{HTTP_HOST} ^oceancodeit\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.oceancodeit\.com$
+RewriteRule ^/?$ "http\:\/\/oceancodeit\.com\/public\/index\.php" [R=301,L]
+
